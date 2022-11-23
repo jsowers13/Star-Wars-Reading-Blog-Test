@@ -1,3 +1,5 @@
-/* 
-    General Styles
-*/
+.data-row{
+    
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+}
