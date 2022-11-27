@@ -18,18 +18,18 @@ export const Home = () => {
           {store.characters.map((item, index) => {
             return (
               <div key={index} className="col">
-                <CharactersCard character={item} index={index} category="characters" />
+                <CharactersCard
+                  character={item}
+                  index={index}
+                  category="characters"
+                />
               </div>
             );
           })}
         </div>
 
-
-       
-
         <h1>Planets</h1>
         <div className="row data-row">
-          
           {store.planets.map((item, index) => {
             return (
               <div key={index} className="col">
@@ -41,11 +41,16 @@ export const Home = () => {
 
         <h1>Vehicles</h1>
         <div className="row data-row">
-          
           {store.vehicles.map((item, index) => {
-            <div key={index} className="col">
-              <VehiclesCard vehicle={item} index={index} category="vehicles" />
-            </div>;
+            return (
+              <div key={index} className="col">
+                <VehiclesCard
+                  vehicle={item}
+                  index={index}
+                  category="vehicles"
+                />
+              </div>
+            );
           })}
         </div>
       </div>
